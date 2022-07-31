@@ -1,0 +1,46 @@
+# some more ls aliases
+ 44 alias ll='ls -alF'
+ 43 alias la='ls -A'
+ 42 alias l='ls -CF'
+ 41 
+ 40 alias rm='rmtrash'
+ 39 alias rmdir='rmdirtrash'
+ 38 alias sudo='sudo'
+ 37 
+ 36 
+ 35 # Add an "alert" alias for long running commands.  Use like so:
+ 34 #   sleep 10; alert
+ 33 
+ 32  alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"
+ 31 
+ 30 # Alias definitions.
+ 29 # You may want to put all your additions into a separate file like
+ 28 # ~/.bash_aliases, instead of adding them here directly.
+ 27 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
+ 26 
+ 25 if [ -f ~/.bash_aliases ]; then
+ 24     . ~/.bash_aliases
+ 23 fi
+ 22 
+ 21 
+ 20 "source /usr/share/fzf/completion.bash & . /usr/share/fzf/key-bindings.bash"
+ 19 
+ 18 # enable programmable completion features (you don't need to enable
+ 17 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+ 16 # sources /etc/bash.bashrc).
+ 15 if ! shopt -oq posix; then
+ 14   if [ -f /usr/share/bash-completion/bash_completion ]; then
+ 13     . /usr/share/bash-completion/bash_completion
+ 12   elif [ -f /etc/bash_completion ]; then
+ 11     . /etc/bash_completion
+ 10   fi
+  9 fi
+  8 
+  7 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+  6 
+  5 # If not running interactively, do not do anything
+  4 # [[ $- != *i* ]] && return
+  3 # Otherwise start tmux
+  2 # [[ -z "$TMUX" ]] && exec tmux
+  1 
+  0 # [[ $TERM != "screen" ]] && exec tmux
