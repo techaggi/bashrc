@@ -148,4 +148,6 @@ PS1="\n\$(if [[ \$? == 0 ]]; then echo \"\[\033[0;33m\]\"; else echo \"\[\033[0;
 
 xmodmap -e "keycode 66 = ISO_Level3_Shift"
 
+EDITOR="nvim"
+
 
