@@ -95,9 +95,11 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
-alias lia="ls -lia"
+alias lia="ls -liart"
 alias lsd='ls -d */'
 alias ww='cd /home/haggi/Dropbox/wiki'
+alias sudoo='sudo -H -u root bash -l -c 'cd "$(pwd)"; exec "$SHELL"''
+# alias more='cat | more < '
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
